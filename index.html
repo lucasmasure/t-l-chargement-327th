@@ -78,7 +78,7 @@
     <p class="sub">L'application du 327ème Corps Stellaire</p>
 
     <button class="btn" id="installBtn" type="button" disabled>⬇️ Télécharger l'application</button>
-    <a class="btn secondary" href="https://lucasmasure.github.io/site327th/index.html">Continuer sur le site</a>
+    <a class="btn secondary" href="https://lucasmasure.github.io/site-327th/index.html">Continuer sur le site</a>
 
     <p class="msg" id="installedMsg" hidden>✅ Application installée ! Retrouvez « 327th » sur votre écran d'accueil.</p>
 
@@ -111,7 +111,7 @@
 
   const standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   // Dans l'application installée : on ouvre directement le site 327th.
-  if (standalone) { location.replace('https://lucasmasure.github.io/site327th/index.html'); return; }
+  if (standalone) { location.replace('https://lucasmasure.github.io/site-327th/index.html'); return; }
 
   const ua = navigator.userAgent;
   const isIos = /iphone|ipad|ipod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
